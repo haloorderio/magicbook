@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	{% if page.title %}
+	<title>{{ page.title }} - {{ site.name }}</title>
+	{% else %}
+	<title>{{ site.name }}</title>
+	{% endif %}
+
+	{% include meta.html %}
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Preload -->
+	<link rel="preload" as="style" href="{{ site.url }}/assets/css/main.min.css?v={{ site.assets }}" />
+	{% if page.url != '/' %}<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography/dist/typography.min.css" />{% endif %}
+	<link rel="preload" as="style" href="{{ site.url }}/style.css?v={{ site.assets }}" />
+	<link rel="preload" as="script" href="{{ site.url }}/assets/js/main.min.js?v={{ site.assets }}" />
+
+	<!-- Main -->
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/main.min.css?v={{ site.assets }}" />
+	{% if page.url != '/' %}<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography/dist/typography.min.css" />{% endif %}
+	<link rel="stylesheet" href="{{ site.url }}/style.css?v={{ site.assets }}" />
+
+	<!-- RSS Feed -->
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+	<!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+	
+	<meta name="facebook-domain-verification" content="4pz8jzmb6nsu541flmiujq3za4hkzx" />
+	
+	<!-- Meta Pixel Code -->
+
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('set', 'autoConfig', false, '705788597956183');
+        fbq('init', '705788597956183');
+        fbq('track', 'PageView');
+	fbq('track', 'standart');                                                
+    
+    $("a[href=\"#\"]").click(function(e) {
+        e.preventDefault();
+        return false;
+    });
+	</script>
+	
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=705788597956183&ev=PageView&noscript=1"
+	/></noscript>
+
+	<!-- End Meta Pixel Code -->
+</head>
+
+<body class="overflow-hidden md:bg-zinc-300 {% if site.locked %}locked {% endif %}">
+	{% include locked.html %}
+<div class="max-md:h-screen max-md:overflow-hidden">
+	<div class="h-screen overflow-auto max-md:pb-28 viewport">
+		<div class="flex flex-col items-center justify-center min-h-full py-6 [&_header]:w-full [&_main]:w-full [&_footer]:w-full [&_main_article]:mb-20 last:[&_main_article]:mb-0 bg-white max-w-[600px] mx-auto">
+
+			<!-- {% if page.url == '/' %}
+			<header>
+				<img src="{{ site.url }}/assets/img/banner-main.jpeg" alt="main banner" width="600" height="100%" class="-mt-6" />
+			</header>
+			{% endif %} -->
+
+			<div class="mx-6">
+				<div class="prose my-10">
+				<a href="https://nikojulius.com/member/aff/go/muhnurulhakim?i=19" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 block py-3 px-4 rounded-lg w-full text-center mt-4" style="color:white;text-decoration:none">
+					<b>Daftar Sekarang</b>
+				</a>
+					<br>
+					<br>
+					<h1><span class="black">Ngalamin</span>
+					    <span class="red">Masalah</span>
+					    <span class="black">Ini?</span>
+					</h1>
+
+					<style>
+					h1{font-weight:700; font-size:30px; text-align:center;}
+					.black{color:black}
+					.red{color:red}
+					.blue{color:blue}
+					</style>
+				<br>
+
+				<p style="color:black; text-align:left">✅ 😖 Tembok kamar/rumah penuh coretan si kecil.</p>
+				<br>
+				<p style="color:black; text-align:left">✅ 😖 Beli buku gambar dan pensil warna/crayon berulang kali karena anak suka banget menggambar atau menulis.</p>
+				<br>
+				<p style="color:black; text-align:left">✅ 😖 Anak sering merengek minta main hape.</p>
+				<br>
+				<p style="color:black; text-align:left">✅ 😖 Anak terlalu fokus nonton video atau main game di hape.</p>
+
+				<br>
+				<p align="center">
+  				<img src="{{ base.url }}/products/anak-kesal.jpeg" />
+				</p>
+				<br>
+				<p style="color:red; text-align:left">Tapi, kali ini Mommy bisa tenang...</p>
+
+				<p style="color:black; text-align:left">
+                    💥 <b>Karena ada Magic Book untuk latihan menulis dan menggambar anak</b>
+                <br>
+                    <b>(Dapatkan BONUS Pembelian senilai Rp.240.000,- Hari Ini, teruskan membaca)</b>
+				<p align="center">
+  				<img src="{{ base.url }}/products/magic-book-1.jpeg" />
+				</p>
+
+
+
+				<br>
+				<p style="color:black; text-align:left">Maka <b>Tiktok adalah hal yang Wajib kamu manfaatkan!</b></p>
+				<br>
+				<br>
+				<p style="color:black; font-size:25px; text-align:center"><b>MASALAHNYA...</b></p>
+				<br>
+				<p style="color:black; text-align:left">❌ Kamu mungkin bingung bagaimana cara memulainya, karena gak begitu terbiasa..</p>
+				<br>
+				<p style="color:black; text-align:left">❌ Kamu mungkin sudah mencoba-coba, tapi gak juga mendapatkan hasil yang optimal.</p>
+				<br>
+				<p style="color:black; text-align:left">❌ Kamu mungkin bingung harus membuat konten apa di Tiktok?</p>
+				<br>
+				<p style="color:black; text-align:left">❌ Kamu bingung cara membaca analitik akun Tiktok kamu?</p>
+				<br>
+				<p style="color:black; text-align:left">❌ Kamu tidak memiliki komunitas tempat bisa bertanya atau berdiskusi?</p>
+				<br>
+				<p style="color:black; text-align:left">Di sinilah <b>Kelas Tiktok</b> hadir, untuk membantu kamu...</p>
+				<br>
+				<hr>
+				<br>
+				<p style="color:black; font-size:25px; text-align:center"><b>SIAPA MENTOR KELAS INI?</b></p>
+				<br>
+				<p align="center">
+				  <img src="https://kelastiktok.id/wp-content/uploads/2021/03/2021-03-08_13-33-08.png" />
+				</p>
+				<br>
+				<p style="color:black; text-align:left">
+					Salam kenal, aku <b>Abibayu</b> seorang <b>Konten Kreator</b> dan pemilik beberapa Bisnis.
+					<br>
+					<br>
+					Mulai ber-medsos sejak tahun 2015 dan aktif membangun Audience di Instagram, aku juga memulai Tiktok sekitar Desember 2019.
+					<br>
+					<br>					
+					Kurang lebih 9-10 bulan sejak itu, aku mendapat sekitar 300,000+ followers dan mulai memutuskan untuk <b>serius mengembangkan Tiktok-ku</b>.
+					<br>
+					<br>
+					Setelah, 4 bulan aku berhasil <b>mencapai 1 juta followers</b> Tiktok (bertumbuh 2X lipat lebih).
+					<br>
+					<br>
+					Berdasarkan pengalaman ini, aku ingin <b>berbagi pengalaman</b> yang diharapkan bisa <b>membantu kamu untuk mendapatkan hasil yang optimal</b> dalam mengembangkan Bisnis dan Brand Bisnis kamu di Tiktok.
+				</p>
+				<br>
+				<hr>
+				<br>
+				<p style="color:black; font-size:25px; text-align:center"><b>APA AJA YANG AKAN KAMU PELAJARI?</b></p>
+				<br>
+				<p style="color:black; text-align:left">Ada <b>56+ Video</b>, Pokoknya dari A-Z tentang mengoptimalkan Tiktok!</p>
+				<br>
+				<p style="color:black; text-align:left">
+					<b>1. Seputar Tiktok & DNA</b>
+					<br>
+					<br>
+					Pokoknya kita bahas semua fakta-fakta mengenai Tiktok lengkap termasuk menemukan DNA kamu...
+					<br>
+					<br>
+					<b>2. Optimasi Akun Tiktok</b>
+					<br>
+					<br>
+					Tur semua fitur Tiktok, buat Akun Pro, Optimasi, Link, Cara buat bio yang menarik dan banyak lagi deh...
+					<br>
+					<br>
+					<b>3. Semua tentang Konten</b>
+					<br>
+					<br>
+					Belajar memahami semua elemen penting Konten, Tipe Konten, mencari ide, dan cara perencanaannya.
+					<br>
+					<br>
+					<b>4. Proses Produksi Video</b>
+					<br>
+					<br>
+					Belajar secara langsung gimana saya melakukan proses produksi pembuatan Video Tiktok.
+					<br>
+					<br>
+					<b>5. Tiktok Analytics</b>
+					<br>
+					<br>
+					Belajar secara detil mengenai cara membaca analitik (data) performa Konten Tiktok kita.
+					<br>
+					<br>
+					<b>6. Hack Algoritma Tiktok</b>
+					<br>
+					<br>
+					Memahami gimana cara kerja Algoritma Tiktok, Cara Masuk FYP sampai bisa memiliki 1 juta follower!
+					<br>
+					<br>
+					<b>7. Dapatin Duit dari Tiktok</b>
+					<br>
+					<br>
+					Gimana dapatin uang dari Tiktok, dengan studi-studi kasus nyata.
+					<br>
+					<br>
+					<b>8. Panduan Iklan di Tiktok</b>
+					<br>
+					<br>
+					Belajar lengkap cara Iklan di Tiktok bersama partner saya Niko Julius (Expert Medsos)
+					<br>
+					<br>
+					<b>9. Tips & Trik Rahasia</b>
+					<br>
+					<br>
+					Berbagi tips seputar FYP, Kolaborasi, Copyright bahkan cara Verified Tiktok!
+				</p>
+				<br>
+				<p style="color:black; text-align:left">Oh iya, ini masih <b>belum termasuk update-update terbaru</b> ya...</p>
+				<br>
+				<hr>
+				<br>
+				<center>
+					<span style="color:red;">PERHATIKAN
+					</span>
+				</center>
+				<p style="color:black; font-size:25px; text-align:center"><b>TIKTOK DATA ANALYTICS</b></p>
+				<br>
+				<p style="color:black; text-align:left">Apa yang akan kamu pelajari bukan sekedar teori saja. Melainkan sesuatu yang sudah saya lakukan dan lalui selama ini...</p>
+				<br>
+				<p style="color:black; text-align:left">Jadi kamu gak perlu "membuang waktu" mencoba-coba sendiri...</p>
+				<br>
+				<p style="color:black; text-align:left">Saya sudah pernah melalui itu...</p>
+				<br>
+				<p style="color:black; text-align:left">Kamu gak perlu melewati itu lagi.</p>
+				<br>
+				<p style="color:black; text-align:left">Mending kamu fokus dengan Bisnis-nya aja kan?</p>
+				<br>
+				<p align="center">
+				  <img src="https://kelastiktok.id/wp-content/uploads/2021/03/2021-03-08_13-10-51.png" />
+				</p>
+				<br>
+				<p align="center">
+				  <img src="https://kelastiktok.id/wp-content/uploads/2021/03/2021-03-08_13-12-49.png" />
+				</p>
+				<br>
+				<hr>
+				<br>
+				<p style="color:black; font-size:25px; text-align:center"><b>BERAPA HARGA KELAS INI?</b></p>
+				<br>
+				<p style="color:black; text-align:left">
+					Kamu hanya berinvestasi sekali bayar aja untuk dapatin semuanya.
+					<br>
+					<br>
+					✅ 56+ Video Modul
+					<br>
+					<br>
+					✅ Akses Selamanya
+					<br>
+					<br>
+					✅ Update Modul Gratis
+					<br>
+					<br>
+					✅ Akses Telegram Member
+					<br>
+					<br>
+					✅ Program Afiliasi upto 40%
+					<br>
+					<br>
+					✅ Support Website
+				</p>
+					<br>
+				<p style="color:black; text-align:left">Semua update & fitur tambahan Gratis!</p>
+				<br>
+				<p style="color:black; text-align:center"><b>HARGA KHUSUS KELAS TIKTOK</b></p>
+				<br>
+				<p style="color:black; font-size:20px; text-align:center">
+					<b><s>Rp 394,000</s></b>
+					<br>
+					<b>Rp 197,000</b>
+				</p>
+				<br>
+				<p style="color:black; text-align:center">
+					<i>Sekali bayar berlaku untuk selamanya (lifetime)</i>
+				</p>
+				<br>
+				<a href="https://nikojulius.com/member/aff/go/muhnurulhakim?i=19" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 block py-3 px-4 rounded-lg w-full text-center mt-4" style="color:white;text-decoration:none">
+					<b>Daftar Sekarang</b>
+				</a>
+				<br>
+				<hr>
+				<br>
+				<p style="color:black; font-size:25px; text-align:center"><b>BACA JUGA</b></p>
+				<br>
+				<p style="color:black; font-size:20px; text-align:center"><b>Frequently Asked Questions</b></p>
+				<br>
+				<p style="color:black; text-align:center">Pertanyaan-pertanyaan umum yang sering ditanyakan dan jawabannya</p>
+				<br>
+				<details>
+				    <summary><b>Apa pemula bisa ikut?</b></summary>
+				    Yes, Kelas ini didesain untuk yang pemula hingga yang sudah ahli sekalipun. Dibuat komprehensif dan selengkap mungkin.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Apa nanti masih harus beli tools berbayar?</b></summary>
+				    Sejauh ini, tidak ada tools berbayar yang digunakan. Kecuali kalau penggunaan aplikasi desain yang menggunakan lisensi berbayar, tergantung kebutuhan masing-masing.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Apa ada Garansi?</b></summary>
+				    Garansi bisa atau sukses tentu gak ada yang bisa menjamin. Harus kamu yang praktekin, dengan komitmen dan konsistensi.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Garansi Uang Kembali?</b></summary>
+				    Mohon maaf, kami tidak melayani REFUND. Sehingga pastikan belilah apabila memang ingin dipelajari. Btw, ini berlaku seumur hidup beserta updatenya lho.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Apakah ada Update Kedepannya?</b></summary>
+				    Pasti! Mengingat dinamisnya pertumbuhan platform ini. Maka pasti akan ada update-update yang akan diberikan pada Kelas ini.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Apa ada Grup untuk diskusi / tanya jawab?</b></summary>
+				    Tenang, kamu akan disediakan Grup sesama member kelas, pengajar dan tim untuk berdiskusi satu sama lain.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Apa nanti harus beli tools berbayar?</b></summary>
+				    Siapa saja yang ingin memanfaatkan Tiktok untuk meningkatkan Penjualan Produk & Jasa, meningkatkan awareness & audience untuk Brand maupun Content Creator.
+				</details>
+				<br>
+				<details>
+				    <summary><b>Apakah bisa dari HP saja?</b></summary>
+				    Tentu saja bisa, pembelajaran Kelas ini bisa diakses dari mana saja, kapan saja. Namun memang ada beberapa tampilan pelajaran yang menggunakan laptop (tapi bisa diakses juga di HP)
+				</details>
+				<br>
+				<a href="https://nikojulius.com/member/aff/go/muhnurulhakim?i=19" target="_blank" rel="noopener" class="bg-emerald-500 hover:bg-emerald-600 block py-3 px-4 rounded-lg w-full text-center mt-4" style="color:white;text-decoration:none">
+					<b>Daftar Sekarang</b>
+				</a>
+				<br>
+				<hr>
+				<p style="color:black; font-size:8px; text-align:left">
+					<i>Disclaimer:<br>Any results stated in the Ecourse are our personal results. Please understand our results are not typical, we are not implying you will achieve similar results, or even create any results for yourself. We are using these references for example purposes only. Your results will vary and depend on many deciding factors, such as (but not limited to), your background, experience, and commitment. Huge effort and action is required. If you’re not willing to accept that, please DO NOT BUY THIS ECOURSE. This site is not a part of the Facebook Website. Additionally, This site is NOT endorsed by Facebook in any way.</i>
+				</p>
+			</div>
+					
+			<footer>
+				<button type="button" class="fixed bottom-4 right-4 flex items-center justify-center rounded-xl py-2 px-2 shadow-xl text-white bg-emerald-600 hover:bg-emerald-500 focus-visible:outline-none disabled:hover:bg-emerald-600" id="backTop">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/>
+					</svg>
+					<span class="sr-only">Kembali Ke Atas</span>
+				</button>
+			</footer>
+
+		</div>
+	</div>
+</div>
+
+<slot>
+	<script src="{{ site.url }}/assets/js/main.min.js?v={{ site.assets }}"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-default.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+	<style>
+		.splide__track--nav>.splide__list>.splide__slide.is-active {
+			border-color: #009ad3;
+		}
+	</style>
+	<script>
+		for ( var i = 0; i < document.getElementsByClassName('splide-parent').length; i++ ) {
+			let main = '.splide-main-' + [i]
+			let nav = '.splide-nav-' + [i]
+
+			let splideMain = new Splide(main, {
+				rewind      : true,
+				arrows      : false,
+			})
+
+			let splideNav = new Splide(nav, {
+				rewind      : true,
+				arrows      : true,
+				fixedWidth  : 100,
+				fixedHeight : 100,
+				pagination  : false,
+				isNavigation: true,
+				breakpoints : {
+					768: {
+						fixedWidth  : 75,
+						fixedHeight : 75,
+						arrows      : false,
+						//focus       : 'center',
+					},
+				},
+			})
+
+			splideMain.sync(splideNav)
+			splideMain.mount()
+			splideNav.mount()
+		}
+	</script>
+	<script>
+	if ( window.location.href.indexOf('/produk/') > -1 ) {
+		sessionStorage.setItem('larizka-paginate',1)
+	} else {
+		sessionStorage.setItem('larizka-paginate',0)
+	}
+	</script>
+	{% include analytics.html %}
+</slot>
+
+</body>
+</html>
